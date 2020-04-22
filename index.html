@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            background: linear-gradient(rgb(168, 150, 150),rgb(31, 165, 158));
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #counter-label{
+            display: inline;
+        }
+        code{
+            background-color: rgb(192, 188, 188);
+            margin: 5px;
+        }
+        .counter-wrapper{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(15, 87, 241);
+        }
+
+        button{
+            color: blanchedalmond;
+            background-color: rgb(73, 65, 65);
+            padding: 12px;
+            border-radius: 3px 10px;
+        }
+        input{
+            border: 2px solid blue;
+            padding: 8px;
+            border-radius: 8px;
+            background-color: rgb(237, 240, 232);
+        }
+        tr{
+            background-color: rgb(154, 177, 132);
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Increment and Decrement Counter :</h3>
+    <div class="counter-wrapper">
+        <div >Counter</div>
+        <h1><span id="count-value"></span></h1>
+        <div>
+            <Button onclick="incriment()">Increment</Button>
+            <Button onclick="decrement()">Decrement</Button>
+        </div>
+    </div>
+
+    <hr/>
+
+    <h3>Simple To Do list :</h3>
+    <div>
+        <input id='todo-input' type="text"/>
+        <button onclick="addToDo()">ADD</button>
+        <div id="toDoContainer"></div>
+    </div>
+    <hr/>
+    <div>
+        This is a simple example of <code>Redux</code> implementation. Here I have created all the redux utility methods from scratch. Such as 
+        <ul>
+            <li>reducer</li>
+            <li>combinedReducer</li>
+            <li>createStore</li>
+            <li>store</li>
+            <li>Dispatch({type : 'ADD', ToDo : 'My new to do for monday'})</li>
+            <li>SubscribeToStore(callBack)</li>
+            <li>GetState()</li>
+        </ul>
+        <p>You can open developer console to monitor every Action Dispatch.</p>
+        <p>Please check out my <a href="#">source code here</a> . I have followed <a href="https://egghead.io/lessons/react-redux-the-single-immutable-state-tree">this video tutorial</a>  from <a href="https://egghead.io/">https://egghead.io/</a> </p>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
